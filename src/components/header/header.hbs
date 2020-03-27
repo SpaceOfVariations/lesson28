@@ -33,24 +33,24 @@
 
 
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-    <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        {{#each navigationLinks}}
-          <li class="nav-item {{#if this.active}} active  {{/if}}">
-            <a class="nav-link" href="{{this.url}}">{{this.label}} <span class="sr-only">(current)</span></a>
-          </li>
-        {{/each}}
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+	<a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			{{#each navigationLinks}}
+			<li class="nav-item {{#if this.active}} active  {{/if}}">
+				<a class="nav-link" href="{{this.url}}">{{this.label}} <span class="sr-only">(current)</span></a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</nav>
 
-  {{!-- <div class="view intro-2">
+{{!-- <div class="view intro-2">
     <div class="full-bg-img">
       <div class="mask rgba-black-light flex-center">
         <div class="container text-center white-text">
