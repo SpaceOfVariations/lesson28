@@ -1,0 +1,159 @@
+<div class="col product-details-page">
+    <div class="row h-100 mt-5">
+        <div class="col-6 row justify-content-center">
+            <div class="card w-50 h-25">
+                <div class="card-header">
+                    <img src="" alt="Image product">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <p class="card-text">Some quick exam    ple text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="header-text row">
+                <div class="col">
+                    <h4>{{product.name}}</h4>
+                </div>
+            </div>
+            <div class="badges row">
+                <div class="col">
+                    <span class="badge badge-pill badge-default">bestseller</span>
+                    <span class="badge badge-pill badge-danger">SALE</span>
+                </div>
+            </div>
+            <div class="price row mt-2">
+                <div class="col">
+                    <span class="d-inline-block">{{product.price}} $</span>
+                    <span class="d-inline-block text-muted">{{product.oldPrice}} $</span>
+                </div>
+            </div>
+            <div class="availability row mt-2">
+                <label for="" class="col-2">Availability:</label>
+                <div class="col-8">
+                    {{#if product.availability}}
+                    In stock
+                    {{else}}
+                    Not available
+                    {{/if}}
+                </div>
+            </div>
+            <div class="ratings row mt-2">
+                <div class="container">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="blocks shadow row mt-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="card z-depth-0 bordered">
+                        <div class="card-header" id="headingOne">
+                            <p class="mb-0 d-flex justify-content-between align-items-center pr-4">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Description
+                                </button>
+                                <i class="fa fa-angle-down d-inline-block" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3
+                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                                coffee nulla
+                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                cred
+                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus
+                                labore sustainable.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card z-depth-0 bordered">
+                        <div class="card-header" id="headingTwo">
+                            <p class="mb-0 d-flex justify-content-between align-items-center pr-4">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Reviews
+                                </button>
+                                <i class="fa fa-angle-down d-inline-block" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3
+                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                                coffee nulla
+                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                cred
+                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus
+                                labore sustainable.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card z-depth-0 bordered">
+                        <div class="card-header" id="headingThree">
+                            <p class="mb-0 d-flex justify-content-between align-items-center pr-4">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Shipping
+                                </button>
+                                <i class="fa fa-angle-down d-inline-block" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3
+                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                                coffee nulla
+                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                cred
+                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus
+                                labore sustainable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. <span class="dots">...</span><span class="more">
+                It was popularised in the 1960s with the release of 
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                </span>
+                <div>
+                <button id="moreButton" class="btn btn-primary">More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

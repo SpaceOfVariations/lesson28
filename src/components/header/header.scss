@@ -1,0 +1,31 @@
+header {
+    height: fit-content!important;
+    .navbar {
+        background-color: $gray-800;
+        position: relative;
+
+        .logo {
+            position: absolute;
+            // background-color: transparent;
+            width: 100px;
+            left: 45%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+            animation: opacity 2s forwards;
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: auto;
+            max-width: 80px;
+        }
+    }
+}
+
+@keyframes opacity {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}

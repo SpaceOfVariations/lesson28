@@ -1,0 +1,17 @@
+.container-fluid {
+    max-width: 1280px;
+}
+
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg")no-repeat center center;
+    background-size: cover;
+}
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.main-layout {
+    margin-top: 200px;
+}

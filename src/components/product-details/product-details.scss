@@ -1,0 +1,62 @@
+@mixin default-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.product-details-page {
+    .header-text {}
+    .badges {}
+
+    .price {
+        color: red;
+        font-size: 25px;
+        .text-muted {
+            text-decoration: line-through;
+        }
+    }
+
+    .ratings {
+        .fa.fa-star {
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .blocks {
+        max-width: 340px;
+        .accordion {
+            min-width: 340px;
+            .card {
+                border: 0;
+                .card-header {
+                    border: 1px solid #CCC;
+                    padding: 0;
+                    .btn.btn-link {
+                        @include default-link;
+                        &:hover,
+                        &:active {
+                            @include default-link;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+
+    .description {
+        .dots {
+            &.close {
+                display: none;
+            }
+        }
+        .more {
+            display: none;
+            &.open {
+                display: inline;
+            }
+        }
+    }
+}

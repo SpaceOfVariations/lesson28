@@ -1,0 +1,70 @@
+.animated-section {
+    height: 320px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #a08383;
+    color: white;
+
+    h1 {
+        width: 500px;
+        position: relative;
+        top: -100px;
+        animation: heading 4s forwards, blink-red 200ms 4s infinite;
+        margin: 0 auto;
+    }
+
+    p {
+        width: 500px;
+        position: relative;
+        left: -2000px;
+        animation: content 2s 2s forwards;
+        margin: 60px auto 0;
+    }
+
+    .animated-btn {
+        display: inline-block;
+        background-color: rgb(56, 16, 16);
+        color: white;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: #fff solid 1px;
+        opacity: 0;
+        animation: btn;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+    }
+}
+
+@keyframes blink-red {
+    from {
+        color: white;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+@keyframes heading {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 50px;
+    }
+}
+
+@keyframes content {
+    0% {
+        left: -2000px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes btn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
